@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let MyTemperature = function (celsius) {
+        this.celsius = celsius;
+        this.getFaraheit = function () {
+            return (9/5) * celsius + 32;
+        }
+    }
+    let temper = new MyTemperature(30);
+    let faraheit = temper.getFaraheit();
+    document.write(faraheit);
+
+
+</script>
+</body>
+</html>
